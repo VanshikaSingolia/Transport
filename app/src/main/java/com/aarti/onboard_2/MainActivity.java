@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatRadioButton;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
@@ -61,6 +62,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        mSkipBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivity.this,Login.class);
+                startActivity(i);
+            }
+        });
+
     }
 
 
@@ -104,8 +113,13 @@ public class MainActivity extends AppCompatActivity {
             else if(i==mDots.length-1) {
                 mNextBtn.setEnabled(true);
                 mNextBtn.setText("Get started");
-                mSkipBtn.setVisibility(View.INVISIBLE);
-                mSkipBtn.setEnabled(false);
+                mNextBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i=new Intent(MainActivity.this,Login.class);
+                        startActivity(i);
+                    }
+                });
             }
            else {
                 mNextBtn.setEnabled(true);
