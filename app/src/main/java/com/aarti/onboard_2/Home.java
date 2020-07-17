@@ -1,13 +1,19 @@
 package com.aarti.onboard_2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 
+import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class Home extends AppCompatActivity {
@@ -42,11 +48,6 @@ public class Home extends AppCompatActivity {
         addDotsIndicator(0);
 
         mSlideViewPager.addOnPageChangeListener(viewListener);
-
-
-
-
-
 
     }
 
