@@ -95,7 +95,7 @@
                 android:textColorHint="#666768"
                 android:elevation="2dp"
                 android:inputType="phone"
-                android:background="@drawable/white"
+                android:background="@drawable/textfield"
                 android:textColor="#111212"
                 android:textSize="15dp">
 
@@ -170,19 +170,23 @@
 
             </TextView>
 
-            <TextView
+            <Button
+                android:id="@+id/sign"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
+                android:background="@color/white"
                 android:fontFamily="@font/montserrat"
                 android:text="Sign up now"
                 android:textAllCaps="false"
                 android:textColor="#0D1947"
+                style="?android:attr/borderlessButtonStyle"
+                android:stateListAnimator="@null"
                 android:textSize="12dp">
 
 
-            </TextView>
+            </Button>
 
         </LinearLayout>
 
