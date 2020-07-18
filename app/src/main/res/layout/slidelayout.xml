@@ -74,7 +74,7 @@
                     android:lineSpacingExtra="8sp"
                     android:text="orem ipsum dolor sit amet, consectetur adipiscing elit nMaecenas "
                     android:textAlignment="center"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@color/colordarkAccent"
                     android:textSize="12sp" />
 
 

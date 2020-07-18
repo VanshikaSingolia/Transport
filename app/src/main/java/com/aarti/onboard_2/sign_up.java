@@ -7,28 +7,30 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Login extends AppCompatActivity {
-    Button log,sign;
+public class sign_up extends AppCompatActivity {
+    Button mlog,msign;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        log=findViewById(R.id.login);
-        log.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_sign_up);
+        mlog=findViewById(R.id.LogBack);
+        mlog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(Login.this,Home.class);
+                Intent i= new Intent(sign_up.this,Login.class);
                 startActivity(i);
             }
         });
 
-        sign=findViewById(R.id.sign);
-        sign.setOnClickListener(new View.OnClickListener() {
+        msign=findViewById(R.id.signbutton);
+        msign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(Login.this,sign_up.class);
+                Intent i= new Intent(sign_up.this,Home.class);
                 startActivity(i);
             }
         });
+
     }
 }
