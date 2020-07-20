@@ -18,7 +18,8 @@ public class sign_up extends AppCompatActivity {
         mlog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(sign_up.this,Login.class);
+                Intent i= new Intent(sign_up.this,
+                        Login.class);
                 startActivity(i);
             }
         });

@@ -27,7 +27,9 @@
             app:cardCornerRadius="80dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_editor_absoluteY="100dp"></androidx.cardview.widget.CardView>
+            app:layout_editor_absoluteY="100dp">
+
+        </androidx.cardview.widget.CardView>
 
 
         <androidx.cardview.widget.CardView

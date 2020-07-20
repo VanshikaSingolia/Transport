@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int mCurrentPage;
 
-    AppCompatRadioButton rbLeft,rbRight;
+
 
 
     @Override
@@ -39,9 +39,6 @@ public class MainActivity extends AppCompatActivity {
         mSlideViewPager=(ViewPager) findViewById(R.id.slideViewPager);
         mDotLayout=(LinearLayout) findViewById(R.id.dotsLayout);
 
-
-        rbLeft=findViewById(R.id.rbLeft);
-        rbRight=findViewById(R.id.rbRight);
 
 
         mNextBtn=(Button) findViewById(R.id.nextbutton);
@@ -137,28 +134,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-    public void onRadioButtonClicked(View view) {
-        boolean isSelected = ((AppCompatRadioButton) view).isChecked();
-        switch (view.getId()) {
-            case R.id.rbLeft:
-                if (isSelected) {
-                    rbLeft.setTextColor(Color.WHITE);
-                    rbRight.setTextColor(getResources().getColor(R.color.colorPrimary));
-                }
-                break;
-
-            case R.id.rbRight:
-
-                if (isSelected) {
-                    rbRight.setTextColor(Color.WHITE);
-                    rbLeft.setTextColor(getResources().getColor(R.color.colorPrimary));
-
-                }
-                break;
-        }
-
-    }
 
 
     }

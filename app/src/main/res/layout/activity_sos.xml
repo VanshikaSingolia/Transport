@@ -283,27 +283,37 @@
         app:layout_constraintTop_toTopOf="@+id/editText" />
 
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="50dp"
-
-                android:layout_height="50dp"
-                android:layout_marginStart="76dp"
-                android:src="@drawable/th"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="84dp"
+                android:src="@drawable/ic_user___icon"
+                android:tint="#FFFFFF"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="5dp"
                 app:layout_constraintBottom_toBottomOf="@+id/cardView3"
                 app:layout_constraintStart_toStartOf="@+id/imageView10"
                 app:layout_constraintTop_toTopOf="@+id/cardView3"
-                app:layout_constraintVertical_bias="0.48" />
+                app:layout_constraintVertical_bias="0.48" >
 
-            <ImageView
-                android:id="@+id/imageView12"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="76dp"
-                android:src="@drawable/th"
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="84dp"
+                android:src="@drawable/ic_user___icon"
+                android:tint="#FFFFFF"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="5dp"
                 app:layout_constraintBottom_toBottomOf="@+id/cardView2"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
-                app:layout_constraintTop_toTopOf="@+id/cardView2" />
+                app:layout_constraintTop_toTopOf="@+id/cardView2"
+                app:layout_constraintVertical_bias="0.583">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
 
 
             <TextView
